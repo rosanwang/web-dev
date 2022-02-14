@@ -1,0 +1,254 @@
+.wb-background {
+    background-color: black;
+}
+
+.wb-all {
+    position: relative;
+    left: 16px;
+    width: 96%;
+    font-family: Calibri, sans-serif;
+}
+
+.wb-a-search-bar {
+    padding-left: 30px;
+    color: white;
+    background-color: #343a40;
+    outline: none;
+    border-radius: 50px;
+    height: 30px;
+    width: 80%;
+}
+
+.wb-a-gear-link {
+    float: right;
+    position: relative;
+    right: 12px;
+}
+
+.wb-a-gear {
+    width: 50px;
+    height: 40px;
+}
+
+.wb-b-nav-bar {
+    height: 50px;
+}
+
+.wb-b-div-link-format {
+    float:left;
+    width: 10%;
+    padding: 16px;
+    text-align:center;
+}
+
+.wb-b-link-format {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
+
+.wb-b-link-format-highlighted {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(29,161,242);
+}
+
+.wb-b-div-link-highlighted {
+    text-align:center;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(29,161,242);
+    margin: 0 16px;
+    padding: 16px 0px;
+
+}
+
+.wb-trends {
+    color:rgb(47, 51, 54);
+    border: thin solid;
+    font-size: 13px;
+    height: 90px;
+}
+
+.wb-d-trends{
+    height: 120px;
+}
+
+.wb-c-text{
+    padding-left: 20px;
+    margin-bottom: 7px;
+    margin-top:7px;
+    color: rgb(110, 118, 125);
+}
+.wb-c-header {
+    padding-left: 20px;
+    margin: 7px auto;
+    color: white;
+    font-weight:bold;
+    float:left;
+    width:100%;
+
+}
+
+.wb-inline {
+    display: inline;
+}
+
+.wb-largetext {
+    font-size: 120%;
+}
+
+.wb-nonbold {
+    font-weight: normal;
+}
+
+.wb-d-e-tweet {
+    width: 70%;
+}
+
+.wb-d-text {
+    padding-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.wb-d-img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    float:right;
+    position:absolute;
+    right:16px;
+    bottom:10px;
+
+}
+
+/*
+Start of the bookmark page!
+ */
+.wb-font {
+    font-family: Calibri, sans-serif;
+}
+
+
+
+.wb-title-layout {
+    width: 100%;
+    position: relative;
+    left: 16px;
+    top: 12px;
+    padding-bottom:12px;
+}
+
+.wb-title-header {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wb-title-user {
+    color:lightgray;
+    font-size: 13px;
+    padding-bottom:12px;
+    border-bottom-color: lightgray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.wb-float-left {
+    float:left;
+}
+
+.wb-avatar-title {
+    vertical-align: top;
+    font-size:15px;
+    color:white;
+    font-weight: bold;
+}
+
+.wb-border {
+    color:rgb(47, 51, 54);
+    border: thin solid;
+    font-size: 13px;
+}
+
+.wb-handle-text {
+    font-weight:normal;
+    font-size:15px;
+    color:lightgray;
+}
+
+.wb-user-text {
+    position: relative;
+    left: 16px;
+    top: 12px;
+}
+
+.wb-user-pic {
+    border-radius: 90px;
+    width: 48px;
+}
+
+.wb-content {
+    vertical-align: top;
+    color:white;
+    font-size:15px;
+    width:506px;
+}
+
+.wb-506-width{
+    width:506px;
+}
+
+.wb-12by12{
+    position:relative;
+    left:12px;
+    top:12px;
+}
+
+.wb-main-pic {
+    height:264px;
+    width:504px;
+    border-radius: 20px 20px 0px 0px;
+    border:thin solid;
+    color:rgb(47, 51, 54);
+}
+
+.wb-main-text-content {
+    border-radius: 0 0 20px 20px;
+    border: 1px solid;
+    color:rgb(47, 51, 54);
+}
+
+.wb-main-text{
+    padding:12px;
+    color: gray;
+    font-size:15px
+}
+
+.wb-white-main-header{
+    color:white;
+    font-weight: bold;
+}
+
+.wb-icon-box {
+    float:left;
+    position:relative;
+    top:12px;
+    width:25%;
+}
+
+.wb-icon-style {
+    text-decoration: none;
+    color: gray;
+}
+
+.wb-icon-text {
+    position:relative;
+    left:12px;
+}
+
+.wb-red{
+    color:red;
+}
