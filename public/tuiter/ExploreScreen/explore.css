@@ -1,0 +1,128 @@
+.fa-sm {
+    font-size:0.60em;
+}
+
+.move-left {
+    position: relative;
+    left: -10px;
+}
+
+.more-move-left {
+    position: relative;
+    left: -20px;
+}
+
+.max-width {
+    width:100%;
+}
+
+.rounded-corners {
+    border-radius: 50px;
+}
+
+.icon-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.blue {
+    color: royalblue;
+}
+
+.wb-inline-center {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.follow-width {
+    width: 50%
+}
+
+.font-small {
+    font-size : 14px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.float-right {
+    float:right;
+}
+
+.starship-background {
+    width: 100%;
+    padding: 0px;
+}
+
+.starship-text {
+    position: absolute;
+    bottom: 0px;
+    font-weight:bold;
+    color:white;
+    font-size:35px;
+}
+
+.tab-format {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.gear-icon {
+    padding-left: 7px;
+    vertical-align: middle;
+    float:right;
+    position: relative;
+    bottom: 35px;
+}
+
+.gray-normal {
+    font-weight:normal;
+    color: gray;
+}
+
+.middle-img {
+    width: 20%;
+    border-radius: 20px;
+}
+
+.middle-tab-width{
+    width: 80%;
+}
+
+.no-wrap {
+    white-space:nowrap;
+}
+
+.search-bar {
+    position: relative;
+    width: 90%;
+    font-size: 15px;
+    height: 35px;
+}
+
+.search-bar i{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    z-index:1;
+    color: gray;
+
+}
+
+.float-left {
+    float:left;
+}
+
+.search-bar-border {
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.indent {
+    text-indent: 50px;
+}
+
+.max-height {
+    height: 100%;
+}
