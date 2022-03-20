@@ -10,7 +10,7 @@ const ExploreComponent = () => {
                     <input type="text" placeholder="Search Twitter"
                            className="indent float-left max-width rounded-corners search-bar-border"/>
                 </div>
-                <i className="fa fa-cog blue fa-2x gear-icon"></i>
+                <i className="fa fa-cog blue fa-2x gear-icon"/>
             </div>
 
             <ul className="nav nav-tabs tab-format pb-2">
@@ -30,7 +30,7 @@ const ExploreComponent = () => {
                     <a className="nav-link d-md-block d-none" href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
-            
+
             <PostSummaryList/>
         </>
     );

@@ -18,8 +18,8 @@ const PostSummaryListItem = ({
                     <div className="gray-normal"> {post.topic} </div>
                     <span className="font-bold"> {post.userName}
                         <span className="fa-stack fa-sm">
-                                <i className="fas fa-circle fa-stack-2x"></i>
-                                <i className="fas fa-check fa-inverse fa-stack-1x"></i>
+                                <i className="fas fa-circle fa-stack-2x"/>
+                                <i className="fas fa-check fa-inverse fa-stack-1x"/>
                             </span>
                             <span className="gray-normal"> - {post.time} </span>
                         </span>

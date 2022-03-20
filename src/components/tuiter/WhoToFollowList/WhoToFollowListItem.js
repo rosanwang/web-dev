@@ -13,8 +13,8 @@ const WhoToFollowListItem = ({
                         <span className = "font-bold">
                          {who.userName}
                             <span className ="fa-stack fa-sm">
-                                <i className ="fas fa-circle fa-stack-2x"></i>
-                                <i className ="fas fa-check fa-inverse fa-stack-1x"></i>
+                                <i className ="fas fa-circle fa-stack-2x"/>
+                                <i className ="fas fa-check fa-inverse fa-stack-1x"/>
                             </span>
                         </span>
                         <div>
