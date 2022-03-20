@@ -9,6 +9,7 @@ ReactDOM.render(
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+    // retrieves a reference to the DOM element declared in index.html called root
 );
 
 // If you want to start measuring performance in your app, pass a function
