@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import "./index.css";
 import NavigationSidebar from "./NavigationSidebar/";
@@ -15,11 +15,18 @@ const reducer = combineReducers({
 const store = createStore(reducer);
 
 const Tuiter = () => {
+    let [active, setActive]
+        = useState("/tuiter");
+
+    useEffect(() => {
+        setActive(window.location.pathname)
+    })
+
     return(
         <Provider store={store}>
             <div className="row mt-2">
                 <div className="col-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar active={window.location.pathname}/>
+                    <NavigationSidebar active={active}/>
                 </div>
                 <div className="col-10 col-lg-7 col-xl-6">
                     <Outlet/>

@@ -1,3 +1,5 @@
+import {updateTuit}
+    from "../../actions/tuits-actions";
 import {useDispatch} from "react-redux";
 
 const TuitStats = ({
@@ -32,14 +34,37 @@ const TuitStats = ({
     return (
         <div className="row mt-2">
             <span className="col">
-                <i className="far fa-comment me-2"></i>
+                <i className="far fa-comment me-2"/>
                 {tuit.stats.comments}
             </span>
             <span className="col">
-                <i className="fas fa-retweet me-2"></i>
+                <i className="fas fa-retweet me-2"/>
                 {tuit.stats.retuits}
             </span>
-            <span onClick={likeTuit} className="col">
+            <span className="col">
+                Likes: {tuit.stats.likes}
+                <i onClick={() => updateTuit(dispatch, {
+                    ...tuit, stats: {
+                        comments: tuit.stats.comments,
+                        retuits: tuit.stats.retuits,
+                        likes: tuit.stats.likes + 1,
+                        dislikes: tuit.stats.dislikes
+                    }
+                })} className="far fa-thumbs-up ms-2"/>
+            </span>
+            <span className="col">
+                Dislikes: {tuit.stats.dislikes}
+                <i onClick={() => updateTuit(dispatch, {
+                    ...tuit, stats: {
+                        comments: tuit.stats.comments,
+                        retuits: tuit.stats.retuits,
+                        likes: tuit.stats.likes,
+                        dislikes: tuit.stats.dislikes + 1
+                    }
+                })} className="far fa-thumbs-down ms-2"/>
+            </span>
+
+{/*{            <span onClick={likeTuit} className="col">
                 {
                     tuit.liked && <i className="fas fa-heart me-1 wd-red"></i>
                 }
@@ -48,10 +73,10 @@ const TuitStats = ({
                     <i className="far fa-heart me-1"></i>
                 }
                 {tuit.stats && tuit.stats.likes}
-            </span>
+            </span>}*/}
 
             <div className="col">
-                <i className="fas fa-external-link-alt me-2"></i>
+                <i className="fas fa-external-link-alt me-2"/>
             </div>
         </div>
 );

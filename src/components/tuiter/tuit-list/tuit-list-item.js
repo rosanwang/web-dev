@@ -1,6 +1,8 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
+import {deleteTuit}
+    from "../../actions/tuits-actions";
 
 const TuitListItem = ({
     tuit = {
@@ -28,9 +30,11 @@ const TuitListItem = ({
     }
  }) => {
     const dispatch = useDispatch();
+/*
     const deleteTuit = (tuit) => {
         dispatch({type: 'delete-tuit', tuit})
     };
+*/
 
     return (
         <li className="list-group-item">
@@ -43,10 +47,10 @@ const TuitListItem = ({
                     <td className="ps-3 wd-full-width">
 
                         <span className="fw-bold">{tuit.postedBy.username}</span>
-                        {tuit.verified && <i className="fas fa-badge-check "></i>}
+                        {tuit.verified && <i className="fas fa-badge-check "/>}
                         <span className="ms-1 text-secondary">@{tuit.handle}</span>
                         <span>
-                            <i onClick={() => deleteTuit(tuit)} className="fas fa-remove fa-2x  fa-pull-right "/>
+                            <i onClick={() => deleteTuit(dispatch, tuit)} className="fas fa-remove fa-2x  fa-pull-right "/>
                         </span>
 
                         <div>
@@ -59,12 +63,11 @@ const TuitListItem = ({
                         }
                         {
                             tuit.attachments && tuit.attachments.video &&
-                            <iframe width="100%" height="350px"
-                                    className="mt-2 wd-border-radius-20px wd-full-width"
-                                    src={`https://www.youtube.com/embed/${tuit.attachments.video}`}
-                                    title="YouTube video player" frameBorder="0"
+                            <iframe width="100%" height="350px" className="mt-2 wd-border-radius-20px wd-full-width"
+                                    src={`https://www.youtube.com/embed/${tuit.attachments.video}`} title="YouTube video player"
+                                    frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen></iframe>
+                                    allowFullScreen/>
                         }
                         {/*{JSON.stringify(tweet)}*/}
                         <TuitStats key={tuit._id} tuit={tuit}/>

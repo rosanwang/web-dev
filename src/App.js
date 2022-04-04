@@ -8,9 +8,11 @@ import Tuiter from "./components/tuiter/";
 import ExploreComponent from "./components/tuiter/ExploreScreen/ExploreComponent";
 import HomeScreen from "./components/tuiter/home-screen"
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {useState} from "react";
 // no .js extension needed
 
 function App() {
+
   return (
       <BrowserRouter>
           <div className="container">
