@@ -8,7 +8,7 @@ const ExploreScreen = () => {
         <>
             <div className="row pt-3">
                 <div className="col-xl-2 col-lg-1 col-2">
-                    <NavigationSidebar active="home"/>
+                    <NavigationSidebar/>
                 </div>
 
                 <div className="col-xl-6 col-lg-7 col-10">

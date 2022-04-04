@@ -1,15 +1,18 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
     {
-        active = 'explore'
-    }) => {
+        active = "/tuiter"
+    }
+) => {
+
     return(
         <>
             <div className="list-group">
                 <i className="fab fa-twitter list-group-item"/>
-                <i className="fas fa-home list-group-item d-xl-none"/>
-                <i className="fas fa-hashtag list-group-item d-xl-none active"/>
+                 <Link to="/tuiter" className={"fas fa-home list-group-item d-xl-none " + (active === "/tuiter" ? "active" : "")}/>
+                 <Link to="/tuiter/explore" className={"fas fa-hashtag list-group-item d-xl-none " + (active === "/tuiter/explore" ? "active" : "")}/>
                 <i className="fas fa-bell list-group-item d-xl-none"/>
                 <i className="fas fa-envelope list-group-item d-xl-none"/>
                 <i className="fas fa-bookmark list-group-item d-xl-none"/>
@@ -22,12 +25,13 @@ const NavigationSidebar = (
                     </span>
                 </div>
 
-                <a href="#" className="list-group-item d-xl-block d-none"> <i className="fas fa-home"/> Home </a>
-                <a href="#" className="list-group-item active d-xl-block d-none"><i
-    className="fas fa-hashtag"/> Explore</a>
+                <Link to="/tuiter" className="list-group-item d-xl-block d-none ">
+                    <i className="fas fa-home"/> Home
+                </Link>
+                <Link to="/tuiter/explore" className="list-group-item d-xl-block d-none ">
+                    <i className="fas fa-hashtag"/> Explore</Link>
                 <a href="#" className="list-group-item d-xl-block d-none"><i className="fas fa-bell"/> Notifications</a>
-                <a href="#" className="list-group-item d-xl-block d-none"><i
-    className="fas fa-envelope"/> Messages</a>
+                <a href="#" className="list-group-item d-xl-block d-none"><i className="fas fa-envelope"/> Messages</a>
                 <a href="#" className="list-group-item d-xl-block d-none"><i className="fas fa-bookmark"/> Bookmarks</a>
                 <a href="#" className="list-group-item d-xl-block d-none"><i className="fas fa-list"/> Lists</a>
                 <a href="#" className="list-group-item d-xl-block d-none"><i className="fas fa-user"/> Profile</a>

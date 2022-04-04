@@ -1,0 +1,36 @@
+
+.wd-avatar-image {
+    width: 48px;
+}
+
+.wd-border-radius-20px {
+    border-radius: 20px;
+}
+
+.wd-full-width {
+    width: 100%;
+}
+
+.wd-red {
+    color: red;
+}
+
+.wd-textarea {
+    width: 100%;
+    color: white;
+    padding: 15px 0px 0px;
+    background-color: black;
+}
+
+.wd-top-vertical-align {
+    vertical-align: top;
+}
+
+.wd-pfp-whatshappening {
+    width: 48px;
+    margin: 16px;
+}
+
+.wd-margin-whatshappening {
+    margin-bottom: 16px;
+}
