@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import TuitListItem from "./tuit-list-item";
 import './tuits.css';
-import { findAllTuits} from "../../actions/tuits-actions";
+import {findAllTuits} from "../../actions/tuits-actions";
 
 const TuitList = () => {
 

@@ -3,6 +3,7 @@
 import axios from 'axios';   // programmatically sends and receives HTTP requests
 //const TUITS_API = 'http://localhost:4000/api/tuits';
 const API_BASE = process.env.REACT_APP_API_BASE;
+console.log(API_BASE);
 const TUITS_API = `${API_BASE}/tuits`;
 
 //const TUITS_API = 'https://rosanwang-web-dev-server.herokuapp.com/api/tuits';
